@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+body {
+  @apply bg-[#A08963] text-gray-900 px-[100px];
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
