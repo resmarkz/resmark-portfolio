@@ -1,1 +1,75 @@
-<div class="w-full h-[500px]"></div>
+---
+import Badge from "../components/Badge.astro";
+
+const projects = [
+  {
+    title: "Project 1",
+    description: "Description of project 1",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "/img/project1.png",
+    codeLink: "#",
+    projectLink: "#",
+  },
+  {
+    title: "Project 2",
+    description: "Description of project 2",
+    technologies: ["React", "Node.js"],
+    image: "/img/project2.png",
+    codeLink: "#",
+    projectLink: "#",
+  },
+];
+---
+
+<div class="w-full px-[100px]">
+  <div class="w-full flex flex-col items-center justify-between mt-8">
+    <h1 class="text-white font-extrabold text-[35px]">Projects</h1>
+    <img src="/img/projects-title-bottom.png" alt="" width="6" class="mt-4" />
+  </div>
+  <div class="w-full mt-20 flex flex-col gap-15">
+    <div class="w-full flex items-center justify-between">
+      <div class="w-[478px] h-[254px] bg-[#706D54]"></div>
+      <div class="max-w-[550px] self-start">
+        <h1 class="text-[40px] text-white font-bold">Project Title</h1>
+        <div class="flex gap-2 mb-2">
+          <Badge text="HTML" />
+          <Badge text="CSS" />
+          <Badge text="JS" />
+        </div>
+        <p class="text-[#DBDBDB] my-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+          mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
+          mattis ligula consectetur, ultrices
+        </p>
+        <div class="flex gap-4 items-center">
+          <button class="py-2 px-5 bg-[#CBFF8B] cursor-pointer"
+            >View Code</button
+          >
+          <a href="#" class="text-white underline">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex items-center justify-between">
+      <div class="max-w-[550px] self-start">
+        <h1 class="text-[40px] text-white font-bold">Project Title</h1>
+        <div class="flex gap-2 mb-2">
+          <Badge text="HTML" />
+          <Badge text="CSS" />
+          <Badge text="JS" />
+        </div>
+        <p class="text-[#DBDBDB] my-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa
+          mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla,
+          mattis ligula consectetur, ultrices
+        </p>
+        <div class="flex gap-4 items-center">
+          <button class="py-2 px-5 bg-[#CBFF8B] cursor-pointer"
+            >View Code</button
+          >
+          <a href="#" class="text-white underline">View Project</a>
+        </div>
+      </div>
+      <div class="w-[478px] h-[254px] bg-[#706D54]"></div>
+    </div>
+  </div>
+</div>
