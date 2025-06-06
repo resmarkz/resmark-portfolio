@@ -1,0 +1,12 @@
+---
+interface Props {
+  icon: string;
+  style?: "fas" | "far" | "fal" | "fab" | "fa-solid";
+  class?: string;
+}
+
+const { icon, style = "fas", class: extraClasses = "" } = Astro.props as Props;
+const iconClass = `${style} fa-${icon} ${extraClasses}`;
+---
+
+<i class={iconClass}></i>
