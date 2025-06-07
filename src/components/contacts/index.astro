@@ -1,71 +1,82 @@
-<div class="w-full mt-20 pr-[100px] pb-20" id="contacts">
-  <div class="flex">
-    <div class="w-[100px] h-[5px] bg-white self-end"></div>
-    <h1 class="text-white font-extrabold text-[35px]">Contacts</h1>
-  </div>
-  <div class="w-full mt-15 pl-[100px] flex justify-between">
-    <div class="pl-1">
-      <h1 class="text-white font-semibold text-[38px]">Have a Project?</h1>
-      <h1 class="text-white font-semibold text-[38px]">Let’s Talk!</h1>
-      <button class="py-2 px-5 bg-[#CBFF8B] cursor-pointer mt-4">SUBMIT</button>
+<div class="w-full py-20" id="contacts">
+  <div class="container mx-auto px-10">
+    <div class="flex items-center justify-center md:justify-start">
+      <div
+        class="w-[70px] h-[5px] bg-white self-end absolute left-0 hidden md:block"
+      >
+      </div>
+      <h1
+        class="text-white font-extrabold text-[40px] underline md:no-underline"
+      >
+        Contacts
+      </h1>
     </div>
-    <form
-      action="#"
-      class="space-y-8 w-[450px] max-w-[500px]"
-      autocomplete="off"
-    >
-      <div class="relative group">
-        <input
-          type="text"
-          name="user_name"
-          id="user_name"
-          class="w-full bg-transparent border-b-2 border-white text-white pt-6 pb-1 focus:outline-none peer"
-          placeholder=" "
-        />
-        <label
-          for="user_name"
-          class="absolute left-0 top-4 text-white transition-all duration-200 cursor-text
+    <div class="w-full mt-15 flex flex-col md:flex-row justify-between gap-20">
+      <div class="pl-1">
+        <h1 class="text-white font-semibold text-[35px]">Have a Project?</h1>
+        <h1 class="text-white font-semibold text-[35px]">Let’s Talk!</h1>
+        <button class="py-2 px-5 bg-[#CBFF8B] cursor-pointer mt-4"
+          >SUBMIT</button
+        >
+      </div>
+      <form
+        action="#"
+        class="space-y-8 w-full max-w-[400px]"
+        autocomplete="off"
+      >
+        <div class="relative group">
+          <input
+            type="text"
+            name="user_name"
+            id="user_name"
+            class="w-full bg-transparent border-b-2 border-white text-white pt-6 pb-1 focus:outline-none peer"
+            placeholder=" "
+          />
+          <label
+            for="user_name"
+            class="absolute left-0 top-4 text-white transition-all duration-200 cursor-text
                  peer-focus:top-0 peer-focus:text-sm
                  peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:text-sm"
-        >
-          Name
-        </label>
-      </div>
+          >
+            Name
+          </label>
+        </div>
 
-      <div class="relative group">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          class="w-full bg-transparent border-b-2 border-white text-white pt-6 pb-1 focus:outline-none peer"
-          placeholder=" "
-        />
-        <label
-          for="email"
-          class="absolute left-0 top-4 text-white transition-all duration-200 cursor-text
+        <div class="relative group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="w-full bg-transparent border-b-2 border-white text-white pt-6 pb-1 focus:outline-none peer"
+            placeholder=" "
+          />
+          <label
+            for="email"
+            class="absolute left-0 top-4 text-white transition-all duration-200 cursor-text
                  peer-focus:top-0 peer-focus:text-sm
                  peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:text-sm"
-        >
-          Email
-        </label>
-      </div>
+          >
+            Email
+          </label>
+        </div>
 
-      <div class="relative group">
-        <textarea
-          name="message"
-          id="message"
-          rows="3"
-          class="w-full bg-transparent border-b-2 border-white text-white pt-6 pb-1 focus:outline-none peer resize-none"
-          placeholder=" "></textarea>
-        <label
-          for="message"
-          class="absolute left-0 top-1 text-white transition-all duration-200 cursor-text
+        <div class="relative group">
+          <textarea
+            name="message"
+            id="message"
+            rows="3"
+            class="w-full bg-transparent border-b-2 border-white text-white pt-6 pb-1 focus:outline-none peer resize-none"
+            placeholder=" "></textarea>
+          <label
+            for="message"
+            class="absolute left-0 top-1 text-white transition-all duration-200 cursor-text
                  peer-focus:top-0 peer-focus:text-sm
                  peer-[:not(:placeholder-shown)]:top-0 peer-[:not(:placeholder-shown)]:text-sm"
-        >
-          Message
-        </label>
-      </div>
-    </form>
+          >
+            Message
+          </label>
+        </div>
+      </form>
+    </div>
   </div>
 </div>

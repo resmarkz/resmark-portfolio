@@ -32,7 +32,7 @@ const projects = [
 ];
 ---
 
-<div class="w-full py-10" id="projects">
+<div class="w-full py-10 bg-gray-950" id="projects">
   <div class="container mx-auto px-10">
     <div class="w-full flex flex-col items-center justify-between">
       <h1 class="text-white font-extrabold text-[35px]">Projects</h1>
@@ -45,22 +45,27 @@ const projects = [
           return (
             <div class="w-full grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 gap-10 content-center justify-between">
               <picture
-                class={"order-1" + (index % 2 === 0 ? " md:order-2" : "")}
+                class={
+                  "appear-animation order-1" +
+                  (index % 2 === 0
+                    ? " md:order-2 justify-self-end"
+                    : "justify-self-start")
+                }
               >
                 <img
                   src={project.image}
                   alt=""
-                  class="w-full max-w-[500px] h-auto"
+                  class="w-full max-w-[400px] h-auto"
                   loading="lazy"
                 />
               </picture>
               <div
                 class={
-                  "max-w-[550px] self-start order-2" +
+                  "appear-animation max-w-[550px] self-start order-2" +
                   (index % 2 === 0 ? " md:order-1" : "")
                 }
               >
-                <h1 class="text-[40px] text-white font-bold">
+                <h1 class="text-[30px] text-white font-bold">
                   {project.title}
                 </h1>
                 <div class="flex flex-row flex-wrap gap-2 mb-2">
@@ -68,7 +73,9 @@ const projects = [
                     <Badge text={tech} />
                   ))}
                 </div>
-                <p class="text-[#DBDBDB] my-4">{project.description}</p>
+                <p class="text-[#DBDBDB] my-4 text-[14px]">
+                  {project.description}
+                </p>
                 <div class="flex gap-4 items-center">
                   <a
                     href={project.codeLink}
