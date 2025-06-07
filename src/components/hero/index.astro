@@ -1,8 +1,12 @@
-<section class="w-full h-[520px]" id="hero">
-  <div class="container h-full mx-auto px-10 grid grid-cols-1 md:grid-cols-3">
-    <div class="mt-[100px]">
-      <h1 class="text-white font-extrabold text-[50px]">Hello There,</h1>
-      <h1 class="text-white font-extrabold text-[50px]">
+<section class="w-full md:h-[520px]" id="hero">
+  <div
+    class="container h-full mx-auto px-10 grid grid-cols-1 md:grid-cols-3 grid-rows-[1fr,80px,1fr] md:grid-rows-1"
+  >
+    <div class="mt-[100px] order-1">
+      <h1 class="text-white font-extrabold text-[40px] md:text-[50px]">
+        Hello There,
+      </h1>
+      <h1 class="text-white font-extrabold text-[40px] md:text-[50px]">
         I'm <span class="text-[#CBFF8B]">Mark</span>
       </h1>
       <p class="text-[#DBDBDB] text-[15px]">
@@ -11,14 +15,14 @@
       </p>
       <button class="text-[#CBFF8B] underline mt-2">View More</button>
     </div>
-    <div class="self-end">
+    <div class="self-end order-3 md:order-2">
       <img src="/img/mark-halfbody.png" alt="" />
     </div>
-    <div class="mt-[80px] text-center">
-      <h1 class="text-white font-extrabold text-[50px]">
+    <div class="mt-[80px] text-center md:justify-self-end order-2 md:order-3">
+      <h1 class="text-white font-extrabold text-[30px] md:text-[50px]">
         {"<? "}<span class="text-[#CBFF8B]">coder</span>{" ?>"}
       </h1>
-      <p class="text-[#DBDBDB]">PHP / LARAVEL DEVELOPER</p>
+      <p class="text-[#DBDBDB] text-[10px]">PHP / LARAVEL DEVELOPER</p>
       <img src="/img/arrow-down.png" alt="" class="hidden sm:block mt-[20px]" />
     </div>
   </div>
