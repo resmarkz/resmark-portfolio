@@ -1,27 +1,48 @@
-<div
-  class="w-full h-[130px] bg-gray-950 flex items-center justify-between gap-4 px-[100px]"
->
-  <div>
-    <h1 class="text-white text-[22px] font-semibold">Mark Resma Dacurawat</h1>
-    <p class="text-[#DBDBDB] text-[13px]">
-      Let’s code with love, all right reserve for Mark Dacurawat
-    </p>
-    <div class="flex gap-4 mt-2">
-      <a href="https://www.facebook.com/MarkResmaDacurawat" target="_blank">
-        <img src="/img/facebook.svg" alt="" width="30" />
-      </a>
-      <a href="https://github.com/resmarkz" target="_blank">
-        <img src="/img/github.svg" alt="" width="30" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/mark-resma-dacurawat/"
-        target="_blank"
-      >
-        <img src="/img/linkedin.svg" alt="" width="30" />
-      </a>
-    </div>
-  </div>
-  <a href="https://www.facebook.com/inovamatesolutionsph" target="_blank"
-    ><img src="/img/inovamate-logo.png" alt="" width="80" /></a
+---
+import FontAwesomeIcon from "./FontAwesomeIcon.astro";
+---
+
+<div class="w-full py-10 md:py-5 bg-gray-950">
+  <div
+    class="container mx-auto px-10 flex flex-col gap-10 md:gap-4 md:flex-row items-center justify-between"
   >
+    <div class="flex flex-col md:items-start gap-2">
+      <h1 class="text-white text-[22px] font-semibold">Mark Resma Dacurawat</h1>
+      <p class="text-[#DBDBDB] text-[13px]">
+        Let’s code with love, all right reserve for Mark Dacurawat
+      </p>
+      <div class="flex gap-4 mt-2">
+        <a href="https://www.facebook.com/MarkResmaDacurawat" target="_blank">
+          <FontAwesomeIcon
+            icon="facebook"
+            style="fa-brands"
+            class="text-[30px] text-[#CBFF8B]"
+          />
+        </a>
+        <a href="https://github.com/resmarkz" target="_blank">
+          <FontAwesomeIcon
+            icon="github"
+            style="fa-brands"
+            class="text-[30px] text-[#CBFF8B]"
+          />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mark-resma-dacurawat/"
+          target="_blank"
+        >
+          <FontAwesomeIcon
+            icon="linkedin"
+            style="fa-brands"
+            class="text-[30px] text-[#CBFF8B]"
+          />
+        </a>
+      </div>
+    </div>
+    <a
+      href="https://www.facebook.com/inovamatesolutionsph"
+      target="_blank"
+      class="self-start md:self-center"
+      ><img src="/img/inovamate-logo.png" alt="" width="80" /></a
+    >
+  </div>
 </div>
